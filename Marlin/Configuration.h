@@ -108,10 +108,10 @@
  * 
  * These settings are required and not set by PlatformIO.
  */
-#define KNUTWURST_PRHEAT_NOZZLE_PLA 200
+#define KNUTWURST_PRHEAT_NOZZLE_PLA 200  //ValentineS
 #define KNUTWURST_PRHEAT_BED_PLA     60
-#define KNUTWURST_PRHEAT_NOZZLE_ABS 240
-#define KNUTWURST_PRHEAT_BED_ABS     90
+#define KNUTWURST_PRHEAT_NOZZLE_ABS 220
+#define KNUTWURST_PRHEAT_BED_ABS     80
 
 
 //===========================================================================
@@ -840,9 +840,8 @@
 */
 #define X_DRIVER_TYPE  TMC2209_STANDALONE
 #define Y_DRIVER_TYPE  TMC2209_STANDALONE
-#define Z_DRIVER_TYPE  A4988
-#define E1_DRIVER_TYPE A4988  //#define Z2_DRIVER_TYPE A4988
-
+#define Z_DRIVER_TYPE  TMC2209_STANDALONE
+#define E1_DRIVER_TYPE TMC2209_STANDALONE  //#define Z2_DRIVER_TYPE A4988
 
 #define E0_DRIVER_TYPE TMC2209_STANDALONE
 
@@ -1551,8 +1550,8 @@
 
 #define INVERT_Y_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
 
-#define INVERT_Z_DIR false // set to false for stock drivers or TMC2208 with reversed
-#define INVERT_E1_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
+#define INVERT_Z_DIR true // set to false for stock drivers or TMC2208 with reversed
+#define INVERT_E1_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
 
 #define INVERT_E0_DIR true
 

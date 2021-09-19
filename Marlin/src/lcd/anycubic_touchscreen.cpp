@@ -670,7 +670,7 @@ void AnycubicTouchscreenClass::HandleSpecialMenu()
   || (strcasestr_P(currentTouchscreenSelection, PSTR(SM_PREHEAT_BED_S)) != NULL))
   {
     SERIAL_ECHOLNPGM("Special Menu: Preheat Ultrabase");
-    queue.inject_P(PSTR("M140 S60"));
+    queue.inject_P(PSTR("M140 S80")); //ValentineS
   }
 
   #if NONE(KNUTWURST_BLTOUCH, KNUTWURST_TFT_LEVELING)
